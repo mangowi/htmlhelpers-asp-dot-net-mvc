@@ -35,6 +35,7 @@ namespace HtmlHelperMethods.Models
         public decimal Price { get; set; }
         public bool InStock { get; set; }
         public Availability Availability { get; set; }
+        public string Category { get; set; }
 
 
         [Required]

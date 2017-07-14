@@ -2,6 +2,8 @@
 
 @{
     ViewBag.Title = "Index";
+
+    List<SelectListItem> categories = (List<SelectListItem>)ViewBag.Categories);
 }
 
 <h2>Index</h2>
@@ -31,6 +33,12 @@
                 new {text = 2015},
                 new {text = 2017}
             }, "text", "text", 1993), new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(p => p.Category)
+        @Html.ListBoxFor(p => p.Category,categories, new { @class = "form-control" })
+
     </div>
     <div class="form-group">
             <input  type="submit" value="Create" class="btn btn-default btn-right"/> 
