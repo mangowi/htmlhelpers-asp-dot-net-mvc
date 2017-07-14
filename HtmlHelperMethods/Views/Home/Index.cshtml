@@ -54,13 +54,13 @@
 
     </div>
 
-    @Html.RadioButtonFor(p=> p.Availability, HtmlHelperMethods.Models.Availability.Delivery, new { id = HtmlHelperMethods.Models.Availability.Delivery, @checked = false, @GroupName = "MineGroup"})
+    @Html.RadioButtonFor(p=> p.Availability, HtmlHelperMethods.Models.Availability.Delivery, new { id = HtmlHelperMethods.Models.Availability.Delivery, @checked = true, @GroupName = "MineGroup"})
     <label for="@HtmlHelperMethods.Models.Availability.Delivery">@HtmlHelperMethods.Models.Availability.Delivery</label>
 
-    @Html.RadioButtonFor(p => p.Availability, HtmlHelperMethods.Models.Availability.Pickup, new { id = HtmlHelperMethods.Models.Availability.Pickup, @checked = false, @GroupName = "MineGroup" })
+    @Html.RadioButtonFor(p => p.Availability, HtmlHelperMethods.Models.Availability.Pickup, new { id = HtmlHelperMethods.Models.Availability.Pickup,  @GroupName = "MineGroup" })
     <label for="@HtmlHelperMethods.Models.Availability.Pickup">@HtmlHelperMethods.Models.Availability.Pickup</label>
 
-    @Html.RadioButtonFor(p => p.Availability, HtmlHelperMethods.Models.Availability.Reseller, new { id = HtmlHelperMethods.Models.Availability.Reseller, @checked = true, @GroupName = "MineGroup" })
+    @Html.RadioButtonFor(p => p.Availability, HtmlHelperMethods.Models.Availability.Reseller, new { id = HtmlHelperMethods.Models.Availability.Reseller, @GroupName = "MineGroup" })
     <label for="@HtmlHelperMethods.Models.Availability.Reseller">@HtmlHelperMethods.Models.Availability.Reseller</label>
 
     <div class="form-group">
