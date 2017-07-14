@@ -64,6 +64,11 @@
     <label for="@HtmlHelperMethods.Models.Availability.Reseller">@HtmlHelperMethods.Models.Availability.Reseller</label>
 
     <div class="form-group">
+        @Html.LabelFor(p => p.Description)
+        @Html.TextAreaFor(p => p.Description, 15, 30, new { @class="form-group"})
+    </div>
+
+    <div class="form-group">
             <input  type="submit" value="Create" class="btn btn-default btn-right"/> 
     </div>
 }
